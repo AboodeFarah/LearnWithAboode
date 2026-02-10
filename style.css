@@ -140,7 +140,7 @@ img {
 
 .btn-primary {
   background: var(--primary);
-  color: #fff;
+  color: #fff !important;
 }
 
 .btn-primary:hover {
@@ -395,10 +395,18 @@ textarea:focus {
   }
 }
 
+@media(max-width: 428px){
+    .hero-image-wrap img{
+    display: none;
+  }
+  
+}
+
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
+
 
   .nav {
     position: static;
@@ -412,9 +420,11 @@ textarea:focus {
     background: transparent;
   }
 
+
   .hero-grid {
     grid-template-columns: 1.1fr 0.9fr;
   }
+  
 
   .courses-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -436,12 +446,14 @@ textarea:focus {
   .courses-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  
 
   .feature-grid,
   .pricing-grid,
   .testimonial-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  
 }
 
 /* Join page styles */
