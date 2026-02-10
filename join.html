@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Join LearnWithAboode and start your learning journey today."
+    />
+    <title>Join With Us | LearnWithAboode</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav-wrapper">
+        <a class="logo" href="index.html">LearnWithAboode</a>
+        <nav class="nav static-nav" aria-label="Join page navigation">
+          <a href="index.html">Back to Home</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="card join-page-card">
+          <h1 class="section-title">Join With Us</h1>
+          <p class="section-copy">
+            Fill in the form below to enroll with LearnWithAboode. All fields are required.
+          </p>
+
+          <form id="joinPageForm" class="contact-form" novalidate>
+            <label for="joinName">Name</label>
+            <input id="joinName" name="name" type="text" required />
+
+            <label for="joinEmail">Email</label>
+            <input id="joinEmail" name="email" type="email" required />
+
+            <label for="joinNumber">Number</label>
+            <input id="joinNumber" name="number" type="tel" required />
+
+            <label for="joinGender">Gender</label>
+            <select id="joinGender" name="gender" required>
+              <option value="">Select gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="prefer-not-to-say">Prefer not to say</option>
+            </select>
+
+            <label for="joinCountry">Country</label>
+            <input id="joinCountry" name="country" type="text" required />
+
+            <button class="btn btn-primary" type="submit">Submit</button>
+            <p class="form-message" id="joinPageMessage" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
